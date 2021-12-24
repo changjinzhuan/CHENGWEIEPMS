@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <com.xuexiang.xui.widget.picker.XSeekBar
+            android:id="@+id/xsb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            app:xsb_insideRangeLineColor="@color/colorPrimaryDark"
+            app:xsb_insideRangeLineStrokeWidth="10dp"
+            app:xsb_isShowBubble="true"
+            app:xsb_isShowRuler="true"
+            app:xsb_min="10"
+            app:xsb_max="30"
+            app:xsb_numberTextColor="#ffffff"
+            app:xsb_numberTextSize="15sp"
+            app:xsb_outsideRangeLineColor="#f0f0f0"
+            app:xsb_outsideRangeLineStrokeWidth="5dp"
+            app:xsb_rulerColor="@color/xui_config_color_gray_4" />
+
+         <TextView
+            android:id="@+id/tv_xsb"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+             android:layout_height="wrap_content"
+             android:textSize="18sp"
+             android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

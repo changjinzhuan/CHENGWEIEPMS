@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tv_jieshou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="接收内容"
+            android:paddingLeft="5dip" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="@android:color/darker_gray" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_fasong"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="top|left"
+        android:hint="发送内容"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="0204303030343030373303">
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="开锁" />
+
+        <Button
+            android:id="@+id/btn_Start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关锁" />
+
+        <Button
+            android:id="@+id/btn_psamreset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="读取" />
+
+        <!--CheckBox android:id="@+id/cbHex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="十六进制"  /-->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+      <com.xuexiang.xui.widget.textview.supertextview.SuperButton
+          android:id="@+id/btn_rx_open"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:text="RX开袋"/>
+        <com.xuexiang.xui.widget.textview.supertextview.SuperButton
+            android:id="@+id/btn_rx_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:text="RX关袋"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_packcheck_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="包装袋核查测试"
+        />
+
+</LinearLayout>

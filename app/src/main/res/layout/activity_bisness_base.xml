@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BisnessBaseActivity"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+
+            <com.xuexiang.xui.widget.textview.supertextview.SuperTextView
+                android:id="@+id/tv_header"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:sBackgroundDrawableRes="@drawable/bgtopbar"
+                app:sCenterTextString="业务标题"
+                app:sCenterTextColor="@color/TextWhite"
+                app:sCenterTextSize="24sp"
+                app:sRightTextString="查看任务"
+                app:sRightTextColor="@color/TextWhite"
+                app:sRightTextSize="12sp"/>
+            <!--TextView
+                android:id="@+id/tv_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bgtopbar"
+                android:gravity="center"
+                android:text="业务标题"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/TextWhite"
+                android:textSize="40sp" /-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_businfo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scro_businfo"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line_kun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/leftarrow" />
+
+                <TextView
+                    android:id="@+id/tv_kuncout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="20"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="捆"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/rightarrow" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.xuexiang.xui.widget.textview.autofit.AutoFitLayout
+            android:id="@+id/line_operinfo"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <com.xuexiang.xui.widget.textview.autofit.AutoFitTextView
+                android:id="@+id/tv_operinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tv_operinfo_border"
+                android:maxLines="2"
+                android:text="操作提示"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="24sp" />
+        </com.xuexiang.xui.widget.textview.autofit.AutoFitLayout>
+
+
+        <LinearLayout
+            android:id="@+id/line_power"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:background="@drawable/tv_border">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="请拖动选择扫描功率,并按右侧上键确认设置"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"/>
+            <com.warkiz.widget.IndicatorSeekBar
+                android:id="@+id/seekBar_power"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                app:isb_indicator_text_size="24dp"
+                app:isb_indicator_color="@color/colorPrimary"
+                app:isb_text_color="@color/colorPrimary"
+                app:isb_text_size="18dp"
+                app:isb_track_progress_bar_color="@color/colorPrimary"
+                app:isb_track_progress_bar_size="5dp"
+                app:isb_max="30"
+                app:isb_min="5"
+                app:isb_seek_bar_type="continuous_texts_ends" />
+
+            <LinearLayout
+                android:id="@+id/line_lockopbtn"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.xuexiang.xui.widget.textview.supertextview.SuperButton
+                    android:id="@+id/btn_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="关锁"
+                    android:layout_weight="1"
+                    app:sSolidColor="@color/app_color_theme_1"
+                    />
+                <com.xuexiang.xui.widget.textview.supertextview.SuperButton
+                    android:id="@+id/btn_unlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingStart="5dp"
+                    android:layout_weight="1"
+                    android:text="开锁"
+                    app:sSolidColor="@color/app_color_theme_5"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/line_scorllrsinfo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="3">
+
+            <LinearLayout
+                android:id="@+id/line_rsinfo"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="4"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+
+
+
+        <LinearLayout
+            android:id="@+id/line_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_footer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:background="@drawable/tv_footer"
+                android:gravity="center_vertical"
+                android:text="底部提示"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

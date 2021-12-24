@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "cn.kcrxorg.chengweiepms",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 33,
+      "versionName": "3.363",
+      "outputFile": "CHENGWEIEPMSRS-v3.363.apk"
+    }
+  ],
+  "elementType": "File"
+}

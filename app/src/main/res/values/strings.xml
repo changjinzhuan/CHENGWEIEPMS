@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">电子签封系统-手持终端</string>
+    <string name="btn_connect"> 连接 </string>
+    <string name="noconnect">未连接通讯组件</string>
+    <string name="connected">已连接通讯组件</string>
+
+    <string name="connecting">正在连接通讯组件...</string>
+    <string name="select">签封追溯</string>
+    <string name="title_activity_login">登录</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">登录</string>
+    <string name="action_sign_in_short">登录</string>
+    <string name="welcome">"欢迎登录本系统"</string>
+    <string name="invalid_username">用户卡号有误</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"登录失败"</string>
+    <string name="operator">请输入或按扫描键读取操作人工作证</string>
+    <string name="auditor">请输入或按扫描键读取复核人工作证</string>
+    <string name="guestlogin">请使用工作证号登录，非工作人员不可办理业务</string>
+    <string name="submit">提交</string>
+    <string name="version">V3.25Debug</string>
+
+</resources>
