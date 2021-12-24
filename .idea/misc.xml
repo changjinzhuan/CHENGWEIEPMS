@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/WorkSpace/CHENGWEIEPMS/app/src/main/res/layout/activity_bisness_base.xml" value="0.1" />
+        <entry key="..\:/Android/WorkSpace/CHENGWEIEPMS/app/src/main/res/layout/activity_com.xml" value="0.25638051044083526" />
+        <entry key="..\:/Android/WorkSpace/CHENGWEIEPMS/app/src/main/res/layout/activity_main.xml" value="0.1597222222222222" />
+        <entry key="..\:/Android/WorkSpace/CHENGWEIEPMS/app/src/main/res/layout/activity_package_check.xml" value="0.2787698412698413" />
+        <entry key="..\:/Android/WorkSpace/CHENGWEIEPMS/app/src/main/res/layout/adapter_item_tedepcdata.xml" value="0.22023809523809523" />
+        <entry key="..\:/Android/WorkSpace/CHENGWEIEPMS/app/src/main/res/layout/fragment_package_check.xml" value="0.23115079365079366" />
+        <entry key="..\:/Android/WorkSpace/CHENGWEIEPMS/app/src/main/res/layout/fragment_setting_produckclass.xml" value="0.23313492063492064" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Android API 20 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
